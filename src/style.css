@@ -7,14 +7,53 @@
 }
 
 .container,
-.main {
+.main, .btn {
   display: flex;
 }
 
 .container {
   width: 100vw;
   height: 100vh;
-  align-items: center;
+  color: #06283D;
+  background-color: #DFF6FF;
+  transition: background .5s;
+}
+
+.container.active{
+  background-color: #06283D;
+  color: #DFF6FF;
+}
+
+.btn{
+  margin: 10px 10px;
+  width: 70px;
+  height: 35px;
+  border: 3px solid #06283D;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn:before{
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 26px;
+  background: #06283D;
+  border-radius: 50%;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  transition: left .5s;
+}
+
+.btn.active{
+  border: 3px solid #DFF6FF;
+}
+
+.btn.active:before{
+  left: 33px;
+  background-color: #DFF6FF;
 }
 
 .main {
@@ -30,16 +69,15 @@
   margin-bottom: 6px;
   width: 100px;
   height: 100px;
-  border: double 2px transparent;
+  border: solid 2px #06283D;
   border-radius: 50%;
-  background-image: linear-gradient(white, white),
-    radial-gradient(circle at top left, #ff3225, #5d1e1e);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+}
+
+.logo.active{
+  border: solid 2px #DFF6FF;
 }
 
 p {
-  color: #3d3d3d;
   opacity: 0.8;
   margin-top: 5px;
 }
@@ -52,26 +90,35 @@ i {
   margin-right: 10px;
 }
 
-ul {
+ul{
   list-style: none;
   margin: 30px auto;
 }
 
-ul li a {
+.list a{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
   width: 350px;
-  background: #ff3225;
   border-radius: 10px;
   margin-bottom: 10px;
   transition: background 250ms;
-
   font-size: 20px;
-  color: white;
+  background: #06283D;
+  color: #DFF6FF;
 }
 
-li a:hover {
-  background: #5d1e1e;
+.link.active a{
+  background-color: #DFF6FF;
+  color: #06283D;
+}
+
+.link a:hover {
+  background: #041A27;
+}
+
+.link.active a:hover{
+  background: #041A27 ;
+  color: #DFF6FF;
 }

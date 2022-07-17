@@ -4,14 +4,25 @@ Project based on the Linktree platform
 # About
 This project aims to spread many links, without the need to list them all in a small space.
 
-[Link Project]()
+[Link Project](https://diovanealves.github.io/Linktree/)
 
-# Novas Implementações
-- [ ] Dark Mode
-- [ ] Footer
+# New Implementations
+- [X] Dark Mode
+- [X] Footer
 
-# O que foi Usado no Projeto
+# Imagen Project
+<p  align=center>
+  <img alt="Capa do projeto" src="img/color-palette.svg" width="30%">
+</p>
+
+<p align=center >
+      <img alt="Capa do projeto" src="img/dark-light-mode.svg" width="100%">
+</p>
+
+# What was used in the Project
 [Visual Studio Code](https://code.visualstudio.com)
+
+[Figma](https://www.figma.com/)
 
 [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
 
