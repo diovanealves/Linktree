@@ -6,31 +6,26 @@
   font-family: "Roboto", sans-serif;
 }
 
-.container,
-.main, .btn {
+.main, .btn{
   display: flex;
 }
 
-.container {
-  width: 100vw;
-  height: 100vh;
+body{
   color: #06283D;
   background-color: #DFF6FF;
-  transition: background .5s;
 }
 
-.container.active{
+.body.active.active{
   background-color: #06283D;
   color: #DFF6FF;
 }
 
 .btn{
-  margin: 10px 10px;
   width: 70px;
   height: 35px;
   border: 3px solid #06283D;
   border-radius: 50px;
-  position: relative;
+  position:relative;
   cursor: pointer;
 }
 
@@ -56,25 +51,23 @@
   background-color: #DFF6FF;
 }
 
-.main {
-  width: 100%;
-  height: 100%;
+.main{
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .logo {
-  margin-top: 20px;
   margin-bottom: 6px;
   width: 100px;
   height: 100px;
-  border: solid 2px #06283D;
+  border: solid 2.5px #06283D;
   border-radius: 50%;
 }
 
 .logo.active{
-  border: solid 2px #DFF6FF;
+  border: solid 2.5px #DFF6FF;
 }
 
 p {
@@ -100,7 +93,7 @@ ul{
   justify-content: center;
   align-items: center;
   height: 60px;
-  width: 350px;
+  width: 300px;
   border-radius: 10px;
   margin-bottom: 10px;
   transition: background 250ms;
